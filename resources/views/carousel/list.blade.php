@@ -1,4 +1,4 @@
-@extends('backend.master')
+@extends('backend.dashboard')
 @section('title', trans('carousel.list'))
 @section('page_title') {{ trans('carousel.list') }}
 @stop
@@ -10,7 +10,8 @@
                 <div class="box-header"></div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <table id="carousellist" class="table table-condensed display responsive nowrap" cellspacing="0" width="100%" >
+                    <table id="carousellist" class="table table-condensed display responsive nowrap" cellspacing="0"
+                           width="100%">
                         <thead style="color: blue;">
                         <tr>
                             <th>{{ trans('carousel.title') }}</th>
@@ -32,43 +33,44 @@
     <!-- /.row -->
 
     <div class="box-footer">
-        <button type="button" onclick="window.location='{{ route("carousel-create") }}'" class="btn btn-primary"><i class="fa fa-plus-circle"></i> {{ trans('carousel.add')}}</button>
+        <button type="button" onclick="window.location='{{ route("carousel-create") }}'" class="btn btn-primary"><i
+                    class="fa fa-plus-circle"></i> {{ trans('carousel.add')}}</button>
     </div>
-
-
     @include('partial.confirm', ['body' => trans('carousel.confirm_delete')])
 @endsection
-
 @section('js')
-    $(function() {
-    $('#carousellist').DataTable({
-    processing: true,
-    serverSide: true,
-    ajax: '{{ route("json-carousel-list") }}',
-    columns: [
-    {data: 'title', name: 'carousel.title'},
-    {{--{data: 'image_url', name: 'categories.image_url'},--}}
-    {data: 'description', name: 'carousel.description'},
-    {data: 'status', name: 'carousel.status', className: 'text-center'},
-    {data: 'created_at', name: 'carousel.created_at'},
-    {data: 'action', name: 'action', orderable: false, searchable:false} ],
+    $(function () {
+        $('#carousellist').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: '{{ route("json-carousel-list") }}',
+            columns: [
+                {data: 'title', name: 'carousel.title'},
+                    {{--{data: 'image_url', name: 'categories.image_url'},--}}
+                {
+                    data: 'description', name: 'carousel.description'
+                },
+                {data: 'status', name: 'carousel.status', className: 'text-center'},
+                {data: 'created_at', name: 'carousel.created_at'},
+                {data: 'action', name: 'action', orderable: false, searchable: false}],
 
-    initComplete: function () {
-    this.api().columns().every(function () {
-    var column = this;
-    var input = document.createElement("input");
-    $(input).appendTo($(column.footer()).empty()) .on('change', function ()
-    { column.search($(this).val(), false, false, true).draw(); }); }); } });
+            initComplete: function () {
+                this.api().columns().every(function () {
+                    var column = this;
+                    var input = document.createElement("input");
+                    $(input).appendTo($(column.footer()).empty()).on('change', function () {
+                        column.search($(this).val(), false, false, true).draw();
+                    });
+                });
+            }
+        });
     });
 
-
-    function confirmDelete(formId)
-    {
-    bootbox.confirm( '{{ trans('carousel.confirm_delete') }}', function(result) {
-    if(result == true){
-    $('#'+formId).submit();
+    function confirmDelete(formId) {
+        bootbox.confirm('{{ trans('carousel.confirm_delete') }}', function (result) {
+            if (result == true) {
+                $('#' + formId).submit();
+            }
+        });
     }
-    });
-    }
-
 @endsection

@@ -8817,7 +8817,7 @@ html, body {
 }
 
 a {
-    color: #5f9f3b;
+    color: #e2004d;
     text-decoration: underline
 }
 
@@ -8929,7 +8929,7 @@ h6, .h6 {
 }
 
 .pink-text {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 .white-text {
@@ -11159,14 +11159,14 @@ h6, .h6 {
 .btn-select.btn-select-icon::after {
     font-size: 2.1em;
     font-weight: normal;
-    color: #5f9f3b;
+    color: #e2004d;
     float: right;
     content: '+'
 }
 
 .btn-select.btn-select-icon.active {
     background-image: none;
-    background-color: #5f9f3b;
+    background-color: #e2004d;
     color: #fff;
     border-color: transparent;
     box-shadow: none;
@@ -11200,7 +11200,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-    background: #5f9f3b;
+    background: #e2004d;
     color: #fff;
     text-decoration: none
 }
@@ -11228,8 +11228,8 @@ h6, .h6 {
 }
 
 .btn-primary.disabled, .btn-primary[disabled] {
-    background-color: #5f9f3b;
-    border-color: #5f9f3b
+    background-color: #e2004d;
+    border-color: #e2004d
 }
 
 .btn-xlg {
@@ -11239,7 +11239,7 @@ h6, .h6 {
 
 .btn-primary-white {
     background: #fff;
-    color: #5f9f3b;
+    color: #e2004d;
     text-decoration: none;
     padding: 15px
 }
@@ -11553,14 +11553,14 @@ h6, .h6 {
 }
 
 .tab-collapse .tab-collapse-tabs li a:hover, .tab-collapse .tab-collapse-tabs li a:active, .tab-collapse .tab-collapse-tabs li a:focus {
-    color: #5f9f3b;
+    color: #e2004d;
     outline: none
 }
 
 .tab-collapse .tab-collapse-tabs li a.active {
     border: 1px solid #ddd;
     border-bottom-color: #fff;
-    color: #5f9f3b;
+    color: #e2004d;
     position: relative;
     top: 1px;
     padding: 9px 10px 6px 10px;
@@ -11733,7 +11733,7 @@ h6, .h6 {
 }
 
 .order-product-summary .sub-header, .basket-list-container .sub-header {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #promoBanner {
@@ -11793,7 +11793,7 @@ h6, .h6 {
 .order-product-summary .total-price {
     font-size: 14pt;
     font-style: italic;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 .order-product-summary.order-summary-tablet-container {
@@ -12010,12 +12010,12 @@ h6, .h6 {
         height: 12px;
         margin: 4px 0 0 4px;
         padding: 0;
-        background-color: #5f9f3b;
+        background-color: #e2004d;
         border-radius: 6px
     }
 
     .input-control .filter-option, .input-control .option-chd {
-        color: #5f9f3b;
+        color: #e2004d;
         width: 100%;
         display: block;
         font-weight: 700
@@ -12058,8 +12058,8 @@ h6, .h6 {
     }
 
     .input-control.selected {
-        background-color: #5f9f3b;
-        background-image: linear-gradient(to bottom, #5f9f3b, #b70449);
+        background-color: #e2004d;
+        background-image: linear-gradient(to bottom, #e2004d, #b70449);
         color: #fff
     }
 
@@ -12068,7 +12068,7 @@ h6, .h6 {
     }
 
     .input-control.selected .radio::after {
-        background-color: #5f9f3b
+        background-color: #e2004d
     }
 
     .input-control.non-selectable, .input-control.non-selectable:hover {
@@ -12416,7 +12416,7 @@ h6, .h6 {
 
 #uploadArtworkModal .modal-body p span {
     font-weight: 900;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #uploadArtworkModal .modal-body p.small-it {
@@ -12552,7 +12552,7 @@ h6, .h6 {
 }
 
 #viewProofModal .proof-footer .btn .primary-btn.disabled {
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #viewProofModal .panel-group {
@@ -13482,7 +13482,7 @@ h6, .h6 {
 }
 
 #header .navbar .navbar-nav > li:hover span, #header .navbar .navbar-nav > li:focus span {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #header .navbar .navbar-nav > li > a > img {
@@ -13500,7 +13500,7 @@ h6, .h6 {
     border-radius: 4px;
     margin-bottom: 0;
     margin-right: 0;
-    background: #5f9f3b;
+    background: #e2004d;
     top: 3px;
     height: 50px
 }
@@ -13579,7 +13579,7 @@ h6, .h6 {
 }
 
 #header .dropdown-menu.basket-dropdown .wrap .wrap-inside .basket-table td .product-title {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #header .dropdown-menu.basket-dropdown .wrap .wrap-inside .basket-table td .spec {
@@ -13619,7 +13619,7 @@ h6, .h6 {
 }
 
 #header .dropdown-menu.basket-dropdown .mini-basket-bottom .price {
-    color: #5f9f3b;
+    color: #e2004d;
     font-size: 20pt;
     font-weight: bold
 }
@@ -13630,7 +13630,7 @@ h6, .h6 {
 }
 
 #header .dropdown-menu.basket-dropdown .mini-basket-bottom .continue-shop a {
-    color: #5f9f3b;
+    color: #e2004d;
     font-weight: bold
 }
 
@@ -13674,7 +13674,7 @@ h6, .h6 {
 }
 
 #header .dropdown-menu.basket-dropdown .btn-primary {
-    background: #5f9f3b;
+    background: #e2004d;
     color: #fff;
     text-decoration: none
 }
@@ -13704,7 +13704,7 @@ h6, .h6 {
 #header .dropdown-menu > li > ul > li.active {
     text-decoration: none;
     color: #656565;
-    background-color: #5f9f3b;
+    background-color: #e2004d;
     border-radius: 4px
 }
 
@@ -13722,14 +13722,14 @@ h6, .h6 {
 #header .dropdown-menu > li > a:hover, #header .dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #fff;
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #header .dropdown-menu > .active > a, #header .dropdown-menu > .active > a:hover, #header .dropdown-menu > .active > a:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #header .dropdown-menu > .disabled > a, #header .dropdown-menu > .disabled > a:hover, #header .dropdown-menu > .disabled > a:focus {
@@ -13782,13 +13782,13 @@ h6, .h6 {
 
 #header .navbar-nav .dropdown-menu > li > ul > li > a:hover, #header .navbar-nav .dropdown-menu > li > ul > li > a:focus {
     text-decoration: none;
-    color: #5f9f3b;
+    color: #e2004d;
     background-color: #fff
 }
 
 #header .navbar-nav .dropdown-menu > li > ul > li > a:hover .fa-angle-right, #header .navbar-nav .dropdown-menu > li > ul > li > a:focus .fa-angle-right {
     padding-top: 5px;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #header .navbar-nav .dropdown-menu > li > ul > li:last-child.last-li a {
@@ -13843,7 +13843,7 @@ h6, .h6 {
 
 #header .navbar-nav .dropdown-menu-large > li > ul > li > ul > li > a:hover .fa-angle-right, #header .navbar-nav .dropdown-menu-large > li > ul > li > ul > li > a:focus .fa-angle-right {
     padding-top: 5px;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #header .navbar-nav .dropdown-menu-large .disabled > a:hover, #header .navbar-nav .dropdown-menu-large .disabled > a:focus {
@@ -13907,7 +13907,7 @@ h6, .h6 {
 #header #top-dropdown.dropdown-menu > li > ul > li.active {
     text-decoration: none;
     color: #656565;
-    background-color: #5f9f3b;
+    background-color: #e2004d;
     border-radius: 4px
 }
 
@@ -13925,14 +13925,14 @@ h6, .h6 {
 #header #top-dropdown.dropdown-menu > li > a:hover, #header #top-dropdown.dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #fff;
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #header #top-dropdown.dropdown-menu > .active > a, #header #top-dropdown.dropdown-menu > .active > a:hover, #header #top-dropdown.dropdown-menu > .active > a:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #header #top-dropdown.dropdown-menu > .disabled > a, #header #top-dropdown.dropdown-menu > .disabled > a:hover, #header #top-dropdown.dropdown-menu > .disabled > a:focus {
@@ -14060,7 +14060,7 @@ h6, .h6 {
     }
 
     #header #MobileCollapse .navbar-nav .products-row .col-xs-12 span > a:hover {
-        color: #5f9f3b
+        color: #e2004d
     }
 
     #header #MobileCollapse .btn-mobile-menu-container {
@@ -14077,7 +14077,7 @@ h6, .h6 {
     }
 
     #header #MobileCollapse .btn-mobile-menu-container .btn-mobile-menu.btn-sample-pack {
-        background: #5f9f3b;
+        background: #e2004d;
         color: #fff
     }
 
@@ -14126,7 +14126,7 @@ h6, .h6 {
     }
 
     #header .navbar .navbar-nav .dropdown .dropdown-header a {
-        color: #5f9f3b
+        color: #e2004d
     }
 
     #header .navbar .navbar-nav .dropdown-toggle {
@@ -14145,7 +14145,7 @@ h6, .h6 {
     #header .navbar .number-container .phone-number {
         text-decoration: none;
         font-weight: bold;
-        color: #5f9f3b;
+        color: #e2004d;
         font-size: 10pt
     }
 
@@ -14192,7 +14192,7 @@ h6, .h6 {
     }
 
     #header .navbar .navbar-nav .dropdown .dropdown-header a {
-        color: #5f9f3b
+        color: #e2004d
     }
 
     #header .navbar .navbar-nav .dropdown-toggle {
@@ -14211,7 +14211,7 @@ h6, .h6 {
     #header .navbar .number-container .phone-number {
         text-decoration: none;
         font-weight: bold;
-        color: #5f9f3b;
+        color: #e2004d;
         font-size: 23pt;
         line-height: 35px
     }
@@ -14304,7 +14304,7 @@ h6, .h6 {
 }
 
 .small-business-census .content .content-header span {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 .small-business-census .content .content-census {
@@ -14320,7 +14320,7 @@ h6, .h6 {
 }
 
 .small-business-census .content .pink-block {
-    background: #5f9f3b;
+    background: #e2004d;
     padding: 60px 20px
 }
 
@@ -15599,7 +15599,7 @@ h6, .h6 {
 }
 
 #productsPage .radio-group.qty-group .item .input-control .price {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #productsPage .radio-group.qty-group .item .input-control .sale-price .price {
@@ -15682,7 +15682,7 @@ h6, .h6 {
 }
 
 #productsPage .radio-group.qty-group .item .input-control.selected {
-    background-image: linear-gradient(to bottom, #5f9f3b 0, #b70449 80px, #5f9f3b 81px, #b70449 140px);
+    background-image: linear-gradient(to bottom, #e2004d 0, #b70449 80px, #e2004d 81px, #b70449 140px);
     color: #fff
 }
 
@@ -15692,7 +15692,7 @@ h6, .h6 {
 
 #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.popular-icon, #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.sale-icon {
     background-color: #fff;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.popular-icon::before, #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.sale-icon::before, #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.popular-icon::after, #productsPage .radio-group.qty-group .item .input-control.selected .highlight-icon.sale-icon::after {
@@ -16018,7 +16018,7 @@ h6, .h6 {
 }
 
 #checkoutPage .panel-heading {
-    background: #5f9f3b;
+    background: #e2004d;
     border-radius: 0
 }
 
@@ -16036,7 +16036,7 @@ h6, .h6 {
     width: 20px;
     border-radius: 50%;
     background: #fff;
-    color: #5f9f3b;
+    color: #e2004d;
     padding-left: 7px
 }
 
@@ -16121,7 +16121,7 @@ h6, .h6 {
     font-family: 'Glyphicons Halflings';
     content: "−";
     float: right;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #checkoutPage #orderSummaryTabletAccordion .panel-heading.accordion-toggle.collapsed:before {
@@ -16206,7 +16206,7 @@ h6, .h6 {
 #checkoutPage #deliveryPanel .address-container .address-details .add-address-button, #checkoutPage #paymentPanel .address-container .address-details .add-address-button {
     height: 34px;
     width: 34px;
-    background: #5f9f3b;
+    background: #e2004d;
     border: 0
 }
 
@@ -16220,7 +16220,7 @@ h6, .h6 {
 }
 
 #checkoutPage #deliveryPanel .address-container .selected-address, #checkoutPage #paymentPanel .address-container .selected-address {
-    border: 2px solid #5f9f3b;
+    border: 2px solid #e2004d;
     border-radius: 5px;
     min-height: 155px
 }
@@ -22805,7 +22805,7 @@ h6, .h6 {
     font-family: 'Glyphicons Halflings';
     content: "−";
     float: right;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #basketPage #productsTableContainer #orderSummaryTabletAccordion .panel-heading.accordion-toggle.collapsed:before {
@@ -22876,7 +22876,7 @@ h6, .h6 {
 }
 
 #basketPage #productsTableContainer .products-table .basket-price-item-row .basket-item-price {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #basketPage #productsTableContainer .products-table thead th {
@@ -22949,7 +22949,7 @@ h6, .h6 {
 }
 
 #basketPage #productsTableContainer .products-table tbody td .popover a {
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #basketPage #productsTableContainer .products-table tbody td .popover-link {
@@ -23191,7 +23191,7 @@ h6, .h6 {
 }
 
 #basketPage #bundleBasketItem .bundle-header {
-    background-color: #5f9f3b
+    background-color: #e2004d
 }
 
 #basketPage #bundleBasketItem .bundle-header .bundle-title {
@@ -23537,7 +23537,7 @@ h6, .h6 {
 #category-page .product-title {
     font-size: 18px;
     padding-bottom: 15px;
-    color: #5f9f3b
+    color: #e2004d
 }
 
 #category-page .information-popover {
@@ -23735,7 +23735,7 @@ h6, .h6 {
 
 #category-page .catagory-blog .item img {
     width: 100%;
-    border-bottom: 3px #5f9f3b solid
+    border-bottom: 3px #e2004d solid
 }
 
 #category-page .catagory-blog .blog-artical {
@@ -24221,7 +24221,7 @@ h6, .h6 {
     height: 0;
     border-top: 0 solid transparent;
     border-bottom: 40px solid transparent;
-    border-right: 40px solid #5f9f3b;
+    border-right: 40px solid #e2004d;
     z-index: 5;
     content: ""
 }

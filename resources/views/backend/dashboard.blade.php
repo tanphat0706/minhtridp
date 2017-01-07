@@ -1,65 +1,69 @@
 <!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title', '') | {{ trans('system.app_name') }}</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.6 -->
-    {!! Html::style('css/bootstrap/css/bootstrap.min.css') !!}
-    <!-- Font Awesome -->
-    {!! Html::style('css/font-awesome.min.css') !!}
-    <!-- Ionicons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    {!! Html::style('plugins/select2/select2.min.css') !!}
-    <!-- Theme style -->
-    {!! Html::style('dist/css/AdminLTE.min.css') !!}
-    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
-    {!! Html::style('dist/css/skins/_all-skins.min.css') !!}
-    <!-- Morris chart -->
-    {!! Html::style('plugins/morris/morris.css') !!}
-    <!-- jvectormap -->
-    {!! Html::style('js/jvectormap/jquery-jvectormap-1.2.2.css') !!}
-    <!-- Date picker -->
-    {!! Html::style('plugins/datepicker/datepicker3.css') !!}
-    {!! Html::style('plugins/datetimepicker/bootstrap-datetimepicker.min.css') !!}
-    <!-- Time picker -->
-    {!! Html::style('plugins/timepicker/bootstrap-timepicker.min.css') !!}
-    <!-- Daterange picker -->
-    {!! Html::style('plugins/daterangepicker/daterangepicker-bs3.css') !!}
-    <!-- bootstrap wysihtml5 - text editor -->
+    <meta
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+            name="viewport">
+{!! Html::style('css/file.css') !!}
+<!-- Bootstrap 3.3.5 -->
+{!! Html::style('css/bootstrap/css/bootstrap.min.css') !!}
+<!-- Font Awesome -->
+{!! Html::style('css/font-awesome.min.css') !!}
+<!-- Ionicons -->
+{!! Html::style('css/ionicons.min.css') !!}
+<!-- Theme style -->
+{!! Html::style('plugins/select2/select2.min.css') !!}
+{!! Html::style('dist/css/AdminLTE.min.css') !!}
+<!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+{!! Html::style('dist/css/skins/_all-skins.min.css') !!}
+<!-- Morris chart -->
+{!! Html::style('plugins/morris/morris.css') !!}
+<!-- jvectormap -->
+{!! Html::style('/plugins/jvectormap/jquery-jvectormap-1.2.2.css') !!}
+
+
+<!-- Date picker -->
+{!! Html::style('plugins/datepicker/datepicker3.css') !!}
+{!! Html::style('plugins/datetimepicker/bootstrap-datetimepicker.min.css') !!}
+<!-- Time picker -->
+{!! Html::style('plugins/timepicker/bootstrap-timepicker.min.css') !!}
+<!-- Select2 -->
+{!! Html::style('file/css/fileinput.css') !!}
+<!-- Daterange picker -->
+{!! Html::style('plugins/daterangepicker/daterangepicker-bs3.css') !!}
+<!-- bootstrap wysihtml5 - text editor -->
     {!! Html::style('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') !!}
     {!! Html::style('css/datatables.bootstrap.css') !!}
     {!! Html::style('plugins/datatables/extensions/Responsive/css/dataTables.responsive.css') !!}
     {!! Html::style('plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css') !!}
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-    {!! Html::style('plugins/fancybox/jquery.fancybox.css') !!}
-    {!! Html::style('plugins/fancybox/helpers/jquery.fancybox-buttons.css') !!}
-    {!! Html::style('plugins/fancybox/helpers/jquery.fancybox-thumbs.css') !!}
-    {!! Html::style('css/style.css') !!}
-    <!-- jQuery 2.2.3 -->
-    {!! Html::script('js/jquery-2.2.3.min.js') !!}
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+{!! Html::style('plugins/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css') !!}
+{!! Html::style('plugins/fancybox/jquery.fancybox.css') !!}
+{!! Html::style('plugins/fancybox/helpers/jquery.fancybox-buttons.css') !!}
+{!! Html::style('plugins/fancybox/helpers/jquery.fancybox-thumbs.css') !!}
+{!! Html::style('css/style.css') !!}
+{!! Html::style('plugins/iCheck/square/blue.css') !!}
+{!! Html::style('css/drag-drop-items.css') !!}
+{!! Html::style('css/check.css') !!}
+<!-- jQuery 2.1.4 -->
+{!! Html::script('plugins/jQuery/jQuery-2.1.4.min.js') !!}
+{!! Html::script('plugins/ckeditor/ckeditor.js') !!}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
- {{--not use yet--}}
-
-    {{--{!! Html::style('plugins/iCheck/square/blue.css') !!}--}}
-    {{--{!! Html::style('css/drag-drop-items.css') !!}--}}
-    {{--{!! Html::style('plugins/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css') !!}--}}
-    {{--{!! Html::style('css/check.css') !!}--}}
-    <!-- Select2 -->
-    {{--{!! Html::style('file/css/fileinput.css') !!}--}}
-    {{--{!! Html::style('css/file.css') !!}--}}
-
 </head>
-<body class="hold-transition fixed skin-black sidebar-mini" style="position: relative;">
+<body class="hold-transition skin-black sidebar-mini" style="position: relative;">
 <div class="overlay" style="display: none;">
     {{ Html::image('images/loading_circle.gif') }}
 </div>
@@ -79,16 +83,16 @@
         <!-- Main content -->
         <section class="content">
             <!-- Your Page Content Here -->
-            @if (\Session::has('message'))
+            @if (Session::has('message'))
                 <div class="alert alert-info fadeOut">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    {{ \Session::get('message') }}
+                    {{ Session::get('message') }}
                 </div>
             @endif
-            @if (\Session::has('error'))
+            @if (Session::has('error'))
                 <div class="alert alert-danger fadeOut">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    {{ \Session::get('error') }}
+                    {{ Session::get('error') }}
                 </div>
             @endif
             @if (count($errors) > 0)
@@ -121,10 +125,10 @@
 <!-- REQUIRED JS SCRIPTS -->
 
 
-<!-- Bootstrap 3.3.6 -->
+<!-- Bootstrap 3.3.2 JS -->
 {!! Html::script('css/bootstrap/js/bootstrap.min.js') !!}
 <!-- ChartJS 1.0.1 -->
-{!! Html::script('js/chartjs/Chart.min.js') !!}
+{!! Html::script('plugins/chartjs/Chart.min.js') !!}
 <!-- bootbox for show message -->
 {!! Html::script('css/bootstrap/js/bootbox.min.js') !!}
 <!-- Select2 -->
@@ -143,14 +147,13 @@
 {!! Html::script('plugins/datetimepicker/moment.js') !!}
 {!! Html::script('plugins/datetimepicker/bootstrap-datetimepicker.min.js') !!}
 <!-- SlimScroll -->
-{!! Html::script('js/slimScroll/jquery.slimscroll.min.js') !!}
+{!! Html::script('plugins/slimScroll/jquery.slimscroll.min.js') !!}
 <!-- FastClick -->
-{!! Html::script('js/fastclick/fastclick.js') !!}
+{!! Html::script('plugins/fastclick/fastclick.min.js') !!}
 <!-- AdminLTE App -->
-{!! Html::script('js/app.min.js') !!}
-{!! Html::script('js/sparkline/jquery.sparkline.min.js') !!}
+{!! Html::script('dist/js/app.min.js') !!}
 <!-- AdminLTE for demo purposes -->
-{!! Html::script('js/demo.js') !!}
+{!! Html::script('dist/js/demo.js') !!}
 {!! Html::script('plugins/select2/select2.full.min.js') !!}
 {{--<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places&sensor=false"></script>--}}
 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -160,8 +163,6 @@
 {!! Html::script('plugins/fancybox/helpers/jquery.fancybox-media.js') !!}
 {!! Html::script('plugins/fancybox/helpers/jquery.fancybox-thumbs.js') !!}
 {!! Html::script('plugins/iCheck/icheck.min.js') !!}
-{!! Html::script('js/jvectormap/jquery-jvectormap-1.2.2.min.js') !!}
-{!! Html::script('js/jvectormap/jquery-jvectormap-world-mill-en.js') !!}
 <!-- page script -->
 {!! Html::script('js/map.js') !!}
 {!! Html::script('js/main.js') !!}

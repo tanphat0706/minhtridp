@@ -1,95 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<meta charset="UTF-8">
-<title>{{ trans('system.app_name') }} | Log in</title>
-<!-- Tell the browser to be responsive to screen width -->
-<meta
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    name="viewport">
-<!-- Bootstrap 3.3.4 -->
-{!! Html::style('css/bootstrap/css/bootstrap.min.css') !!}
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- Ionicons -->
-<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<!-- Theme style -->
-{!! Html::style('dist/css/AdminLTE.min.css') !!}
-<!-- iCheck -->
-{!! Html::style('plugins/iCheck/square/blue.css') !!}
+    <meta charset="UTF-8">
+    <title>Let's Join With Us</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
 
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="{{asset('css/style_auth.css')}}">
+
+
+
+
 </head>
-<body class="login-page">
-    <div class="login-box">
-        <div class="login-logo">
-            <b style="color: #000;"> {{ trans('system.app_name') }} | {{ trans('auth.login') }}</b>
-        </div>
-        <!-- /.login-logo -->
-        <div class="login-box-body">
-            @if (count($errors) > 0)
+
+<body>
+
+<div class="form">
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="#login">{{trans('auth.signin')}}</a></li>
+        <li class="tab"><a href="#signup">{{trans('auth.signup')}}</a></li>
+
+    </ul>
+
+    <div class="tab-content">
+        @if (count($errors) > 0)
             <div class="alert alert-danger">
                 {{ trans('auth.login_error') }}<br>
                 <ul>
                     @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
+                        <li>{{ $error }}</li>
                     @endforeach
                 </ul>
             </div>
-            @endif
-            {{ Form::open(array('route' => 'login', 'method' => 'POST', 'class' => 'form-vertical' )) }}
-                <div class="form-group has-feedback">
-                    {!!Form::email('email', old('email') , array('class' => 'form-control', 'placeholder' => 'Email')) !!}
-                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                </div>
-                <div class="form-group has-feedback">
-                    {!!Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) !!}
-                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                </div>
-                <div class="row">
-                    <div class="col-xs-8">
-                        <div class="checkbox icheck">
-                            <label>
-                                <input type="checkbox" name="remember"> {{ trans('auth.remember_me') }}
-                            </label>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">{{trans('auth.login') }}</button>
-                    </div>
-                    <!-- /.col -->
-                </div>
-            {{ Form::close() }}
+        @endif
+        <div id="login">
+            <h1>Welcome Back!</h1>
 
-                     <a href="{{ url('admin/password/reset') }}">{{ trans('auth.forget_password') }}</a><br>
+            {{ Form::open(array('route' => 'login', 'method' => 'POST' )) }}
+            <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    {!!Form::email('email', old('email')) !!}
+                    {{--<input type="email"required autocomplete="off"/>--}}
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Password<span class="req">*</span>
+                    </label>
+                    {!!Form::password('password') !!}
+                    {{--<input type="password"required autocomplete="off"/>--}}
+                </div>
+
+                <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                <button class="button button-block"/>{{trans('auth.signin')}}</button>
+
+            </form>
 
         </div>
-        <!-- /.login-box-body -->
-    </div>
-    <!-- /.login-box -->
+        <div id="signup">
+            <h1>Sign Up for Free</h1>
 
-    <!-- jQuery 2.1.4 -->
-    {!! Html::script('plugins/jQuery/jQuery-2.1.4.min.js') !!}
+            <form action="/" method="post">
 
-    <!-- Bootstrap 3.3.2 JS -->
-    {!! Html::script('css/bootstrap/js/bootstrap.min.js') !!}
-    <!-- iCheck -->
-    {!! Html::script('plugins/iCheck/icheck.min.js') !!}
-    <script>
-      $(function () {
-        $('input').iCheck({
-          checkboxClass: 'icheckbox_square-blue',
-          radioClass: 'iradio_square-blue',
-          increaseArea: '20%' // optional
-        });
-      });
-    </script>
+
+                    <div class="field-wrap">
+                        <label>
+                            Full Name<span class="req">*</span>
+                        </label>
+                        <input type="text"required autocomplete="off"/>
+                    </div>
+
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Confirm Password<span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                </div>
+                <button type="submit" class="button button-block"/>Get Started</button>
+
+            </form>
+
+        </div>
+
+
+
+    </div><!-- tab-content -->
+
+</div> <!-- /form -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="{{asset('js/index.js')}}"></script>
+
+
+
+
 </body>
 </html>

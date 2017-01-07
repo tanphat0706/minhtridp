@@ -23,5 +23,4 @@ return [
     'updated' => 'Updated category successful',
     'deleted' => 'Deleted category successful',
     'confirm_delete' => 'Do you want to delete this category ?',
-    'flyer-leaflet' => 'Flyer & Leaflet',
 ];

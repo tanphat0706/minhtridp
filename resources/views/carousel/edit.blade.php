@@ -1,4 +1,4 @@
-@extends('backend.master')
+@extends('backend.dashboard')
 @section('title', trans('carousel.edit'))
 @section('page_title') {{ trans('carousel.edit') }}
 @stop
@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-6">
 
-                    <div class="form-group">
+                    <div class="form-group col-md-12 col-xs-12" style="float: left;">
                         <label for="name">{{ trans('carousel.img_url') }}</label><span class="required">*</span>
                         <div>
                             <img class="img-responsive" style="width:100%;height: 215px"

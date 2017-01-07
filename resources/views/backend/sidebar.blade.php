@@ -10,10 +10,7 @@
             @if (Auth::user()->hasRole('viewUsersList') || Auth::user()->hasRole('addUser') ||  Auth::user()->hasRole('deleteUser') || Auth::user()->hasRole('viewUserGroupList') || Auth::user()->hasRole('addUserGroup'))
                 <li class="treeview {{ (Route::is('users-list') ? ' active' : '') }} {{ (Route::is('create-user') ? ' active' : '') }} {{ (Route::is('user-group-list') ? ' active' : '') }} {{ (Route::is('create-user-group') ? ' active' : '') }}
                 {{ (Route::is('edit-user-group') ? ' active' : '') }}">
-                    <a href="#"> <i class="fa fa-users"></i><span>{{ trans('user.users') }}</span><span
-                                class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span></a>
+                    <a href="#"> <i class="fa fa-users"></i><span>{{ trans('user.users') }}</span></a>
                     <ul class="treeview-menu">
                         @if (Auth::user()->hasRole('viewUsersList'))
                             <li {{ (Route::is('users-list') ? 'class  =active' : '') }}><a
@@ -36,10 +33,7 @@
             @endif
             @if (Auth::user()->hasRole('viewCategoryList') || Auth::user()->hasRole('addCategory'))
                 <li class="treeview {{ (Route::is('category-list') ? ' active' : '') }} {{ (Route::is('category-create') ? ' active' : '') }}">
-                    <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('category.categories') }}</span><span
-                                class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span></a>
+                    <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('category.categories') }}</span></a>
                     <ul class="treeview-menu">
                         @if (Auth::user()->hasRole('viewCategoryList'))
                             <li {{ (Route::is('category-list') ? 'class  =active' : '') }}><a
@@ -56,10 +50,7 @@
             @endif
 
             <li class="treeview {{ (Route::is('carousel-list') ? ' active' : '') }} {{ (Route::is('carousel-create') ? ' active' : '') }}">
-                <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('carousel.carousel') }}</span><span
-                            class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span></a>
+                <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('carousel.carousel') }}</span></a>
                 <ul class="treeview-menu">
 
                     <li {{ (Route::is('carousel-list') ? 'class  =active' : '') }}><a
@@ -72,43 +63,17 @@
 
                 </ul>
             </li>
-
-            <li class="treeview {{ (Route::is('property-list') ? ' active' : '') }} {{ (Route::is('property-create') ? ' active' : '') }} {{ (Route::is('propertydetail-create') ? ' active' : '') }} {{ (Route::is('propertydetail-list') ? ' active' : '') }}">
-                <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('property.properties') }}</span><span
-                            class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span></a>
+            <li class="treeview {{ (Route::is('properties-list') ? ' active' : '') }} {{ (Route::is('properties-create') ? ' active' : '') }}">
+                <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('properties.properties') }}</span></a>
                 <ul class="treeview-menu">
 
-                    <li {{ (Route::is('property-list') ? 'class  =active' : '') }}><a
-                                href="{{ route('property-list') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('property.list') }}</a></li>
+                    <li {{ (Route::is('properties-list') ? 'class  =active' : '') }}><a
+                                href="{{ route('properties-list') }}"><i
+                                    class="fa fa-circle-o"></i> {{ trans('properties.list') }}</a></li>
 
-                    <li {{ (Route::is('property-create') ? 'class  =active' : '') }}><a
-                                href="{{ route('property-create') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('property.add') }}</a></li>
-                    <li {{ (Route::is('propertydetail-list') ? 'class  =active' : '') }}><a
-                                href="{{ route('propertydetail-list') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('propertydetail.list') }}</a></li>
-                    <li {{ (Route::is('propertydetail-create') ? 'class  =active' : '') }}><a
-                                href="{{ route('propertydetail-create') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('propertydetail.add') }}</a></li>
-                </ul>
-            </li>
-            <li class="treeview {{ (Route::is('product-list') ? ' active' : '') }} {{ (Route::is('product-create') ? ' active' : '') }}">
-                <a href="#"> <i class="fa fa-picture-o"></i><span>{{ trans('product.products') }}</span><span
-                            class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span></a>
-                <ul class="treeview-menu">
-
-                    <li {{ (Route::is('product-list') ? 'class  =active' : '') }}><a
-                                href="{{ route('product-list') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('product.list') }}</a></li>
-
-                    <li {{ (Route::is('product-create') ? 'class  =active' : '') }}><a
-                                href="{{ route('product-create') }}"><i
-                                    class="fa fa-circle-o"></i> {{ trans('product.add') }}</a></li>
+                    <li {{ (Route::is('properties-create') ? 'class  =active' : '') }}><a
+                                href="{{ route('properties-create') }}"><i
+                                    class="fa fa-circle-o"></i> {{ trans('properties.add') }}</a></li>
 
                 </ul>
             </li>

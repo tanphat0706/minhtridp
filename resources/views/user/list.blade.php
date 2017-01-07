@@ -1,4 +1,4 @@
-@extends('backend.master')
+@extends('backend.dashboard')
 @section('title', trans('user.list'))
 @section('page_title') {{ trans('user.list') }}
 @stop

@@ -2,7 +2,7 @@
 <header class="main-header">
     <!-- Logo -->
     <a href="{{route('admin')}}" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>MT</b>dp</span>
+        <span class="logo-mini">Admin Panel</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">Admin Panel</span>
     </a>

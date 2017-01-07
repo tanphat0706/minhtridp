@@ -11,10 +11,11 @@
 
               <li>
                 <a href="#business-boost"
-                   title="Blog"><span>Blog</span></a>
+                   title="Blog" class="wt-identifier wti_blogurl"><span>Blog</span></a>
               </li>
               <li>
-                <a href="#contact-us">Contact </a>
+                <a wt-identifier="contactus-url" href="#contact-us"
+                   class="wt-identifier wti_contactusurl">Contact </a>
               </li>
               @if(\Auth::check())
                 <li class="dropdown toggle-with-hover">
@@ -38,7 +39,7 @@
                    class="basket-dropdown-toggle wt-identifier wti_minibaskettoggle"
                    data-toggle="dropdown" title="Current basket" ng-click="miniBasketClicked()">
                   <div class="fa icon-basket">
-                    <img src="{{asset('images/basket-transparent-bg.png')}}">
+                    <img src="./images/basket-transparent-bg.png">
                   </div>
                   <span class="basket-items-price pull-right">
                       <span class="basket-number ng-binding" ng-bind="basketItemCount">0</span>
@@ -86,7 +87,7 @@
                         <div class="row">
                           <div class="col-sm-3 col-md-4">
                             <img class="img-responsive"
-                                 src="{{asset('images/basket-bulb.png')}}">
+                                 src="./images/basket-bulb.png">
                           </div>
                           <div class="col-sm-9 col-md-8 go-to-basket">
                             <strong>Need to upload artwork?</strong>
@@ -145,7 +146,7 @@
                    class="basket-dropdown-toggle wt-identifier wti_minibaskettoggle"
                    data-toggle="dropdown" title="Current basket" ng-click="miniBasketClicked()">
                   <div class="fa icon-basket">
-                    <img src="{{asset('images/basket-transparent-bg.png')}}">
+                    <img src="./images/basket-transparent-bg.png">
                   </div>
 
     <span class="basket-items-price pull-right">
@@ -192,7 +193,7 @@
                       <div class="row">
                         <div class="col-sm-3 col-md-4">
                           <img class="img-responsive"
-                               src="{{asset('images/basket-bulb.png')}}">
+                               src="./images/basket-bulb.png">
                         </div>
                         <div class="col-sm-9 col-md-8 go-to-basket">
                           <strong>Need to upload artwork?</strong>
@@ -259,12 +260,12 @@
           <a wt-identifier="ip-title" class="logo hidden-xs wt-identifier wti_iptitle"
              href="#"
              title="instant print. | Flyer &amp; Leaflet Printing with 24hr Dispatch"><img
-                src="{{asset('images/logo.png')}}"
+                src="./images/logo.png"
                 alt="instant print. | Flyer &amp; Leaflet Printing with 24hr Dispatch"></a>
           <a wt-identifier="navbar-icon" class="navbar-brand visible-xs col-xs-5 wt-identifier wti_navbaricon"
              href="#">
             <img class="img-responsive"
-                 src="{{asset('images/ip-mob-logo.png')}}">
+                 src="./images/ip-mob-logo.png">
           </a>
 
           <div class="mini-basket pull-right visible-xs col-xs-5 ng-scope"
@@ -273,7 +274,7 @@
                title="Current basket" ng-click="miniBasketClicked()"
                class="wt-identifier wti_minibasketclicked">
               <div class="fa icon-basket col-xs-2">
-                <img src="{{asset('images/basket-transparent-bg.png')}}">
+                <img src="./images/basket-transparent-bg.png">
               </div>
 
                             <span class="basket-items-price col-xs-9 pull-right">
@@ -306,7 +307,9 @@
               <ul class="dropdown-menu row" role="menu">
                 <li class="col-md-12">
                   <ul>
-                    <li><a href="{{url('flyer-leaflet')}}">All Flyers<i
+                    <li><a wt-identifier="product-flyers-leaflets-all"
+                           href="#flyers-leaflets"
+                           class="wt-identifier wti_productflyersleafletsall">All Flyers<i
                             class="fa fa-angle-right pull-right"></i></a></li>
                     <li><a wt-identifier="product-l-a5"
                            href="#flyers-leaflets/a7#!?rangesizeq=0"
@@ -495,7 +498,7 @@
               <div class="col-xs-12 btn-mobile-menu-container btn-login-container">
                 <a wt-identifier="login-mobile-url" href="#account"
                    class="btn btn-default btn-mobile-menu btn-login wt-identifier wti_loginmobileurl"><img
-                      src="{{asset('images/key.png')}}">
+                      src="./images/key.png">
                   &nbsp;Login to my account</a>
               </div>
 
